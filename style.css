@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
+
+:root {
+  --font-color: #ffffff;
+  --secondary-color: #3b1a04;
+  --font-size: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +13,7 @@
   font-family: "Space Grotesk", sans-serif;
 }
 body {
-  background: url(Image/Background.jpg);
+  background: url(Image/victor\ camera.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -18,17 +25,17 @@ header {
 header .logo {
   font-size: 36px;
   font-weight: 800;
-  color: #ff204e;
+  color: var(--font-color);
 }
 
 header a {
   font-size: 20px;
   text-decoration: none;
-  color: #ff204e;
+  color: var(--font-color);
   padding: 18px;
 }
 header a:hover {
-  color: #330c0c;
+  color: var(--font-color);
 }
 .home {
   height: 450px;
@@ -37,21 +44,31 @@ header a:hover {
   padding: 0px 13%;
 }
 .home-content {
-  max-width: 530px;
-  backdrop-filter: blur(3px);
-  border-radius: 50px;
+  max-width: 510px;
 }
 
 .home-content h1 {
   font-size: 55px;
   width: 800;
-  color: #ff204e;
+  color: var(--font-color);
 }
 .home-content h3 {
   font-size: 26px;
-  color: #ff204e;
+  color: var(--font-color);
 }
 .home-content p {
   font-size: 16px;
-  color: #ff204e;
+  color: var(--font-color);
+}
+.work-section {
+  margin-top: 150px;
+  background-color: bisque;
+}
+.work-header h1 {
+  padding-top: 80px;
+  text-align: center;
+}
+.work-header p {
+  padding-top: 30px;
+  text-align: center;
 }
